@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHD Restaurant</title>
+  <style>
+    :root {
+      --orange: #f97316;
+      --green: #16a34a;
+      --text-dark: #1f2937;
+      --text-light: #f9fafb;
+      --bg-light: #fff7ed;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+    header {
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      color: var(--orange);
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: var(--green);
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 3rem 2rem;
+      background-color: white;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .hero-text h2 {
+      font-size: 2.2rem;
+      color: var(--orange);
+      margin-bottom: 1rem;
+    }
+    .hero-text p {
+      margin-bottom: 1.5rem;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+    .hero-text button {
+      background-color: var(--green);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .hero-text button:hover {
+      background-color: #15803d;
+    }
+    .hero img {
+      flex: 1;
+      max-width: 450px;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    h2.section-title {
+      color: var(--orange);
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .menu-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    .menu-item img {
+      width: 100%;
+      height: 150px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .menu-item h3 {
+      margin: 0.8rem 0 0.3rem;
+      color: var(--green);
+    }
+    .menu-item p {
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+    .about {
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    }
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    button.submit {
+      background-color: var(--orange);
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button.submit:hover {
+      background-color: #ea580c;
+    }
+    footer {
+      background-color: var(--green);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PHD RESTAURANT</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#aboutus">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Welcome to PHD Restaurant</h2>
+      <p>Experience the best local and continental dishes prepared with love and the finest ingredients. Delicious food, cozy atmosphere, and excellent service — all in one place.</p>
+      <button>Place Order</button>
+    </div>
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Delicious food placeholder">
+  </section>
+
+ <!-- <section id="menu">
+    <h2 class="section-title">Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1601050690597-1f69c0b16f6b?auto=format&fit=crop&w=600&q=80" alt="Fried Rice">
+        <h3>Fried Rice & Chicken</h3>
+        <p>Served with fresh vegetables and spicy sauce.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1598514982621-3c7c180dbf5d?auto=format&fit=crop&w=600&q=80" alt="Pizza">
+        <h3>Cheese Pizza</h3>
+        <p>Oven-baked goodness with fresh mozzarella cheese.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1606756790138-8b7bafebf5e3?auto=format&fit=crop&w=600&q=80" alt="Pasta">
+        <h3>Spaghetti Bolognese</h3>
+        <p>Classic Italian pasta tossed in rich tomato sauce.</p>
+      </div>
+    </div>
+  </section>-->
+
+  <!--<section id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="about">
+      <p>Kingsley’s Kitchen is a family-friendly restaurant dedicated to serving high-quality meals with a blend of traditional and modern flavors. We pride ourselves on using locally sourced ingredients and providing a memorable dining experience.</p>
+    </div>
+  </section>-->
+
+  <!--<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit">Send Message</button>
+      </form>
+    </div>
+  </section>-->
+
+  <footer>
+    <p>© 2025 PHD Restaurant — All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
