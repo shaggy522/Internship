@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Bites Restaurant Menu</title>
+    <style>
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #d35400;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav {
+            background-color: #f39c12;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .menu-section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #e67e22;
+            border-bottom: 2px solid #e67e22;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.03);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .menu-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu-info h3 {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .menu-info p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .price {
+            color: #d35400;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #d35400;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tasty Bites Restaurant</h1>
+        <p>Delicious meals made with love ❤</p>
+    </header>
+
+    <nav>
+        <a href="#starters">Starters</a>
+        <a href="#main-course">Main Course</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#drinks">Drinks</a>
+    </nav>
+
+    <!-- Starters -->
+    <div class="menu-section" id="starters">
+        <h2>Starters</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1604908811954-96f82f22f13d" alt="Spring Rolls">
+                <div class="menu-info">
+                    <h3>Spring Rolls</h3>
+                    <p>Crispy rolls filled with vegetables and spices.</p>
+                    <p class="price">$5.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1606755962773-3a7a8e0b49a6" alt="Garlic Bread">
+                <div class="menu-info">
+                    <h3>Garlic Bread</h3>
+                    <p>Buttery bread toasted with fresh garlic.</p>
+                    <p class="price">$4.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Chicken Wings">
+                <div class="menu-info">
+                    <h3>Chicken Wings</h3>
+                    <p>Spicy grilled wings with our secret sauce.</p>
+                    <p class="price">$6.50</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Course -->
+    <div class="menu-section" id="main-course">
+        <h2>Main Course</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1605478031708-792d6b8f9b9e" alt="Grilled Chicken with Rice">
+                <div class="menu-info">
+                    <h3>Grilled Chicken with Rice</h3>
+                    <p>Juicy chicken served with seasoned rice.</p>
+                    <p class="price">$12.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1606755962773-3a7a8e0b49a6" alt="Beef Burger & Fries">
+                <div class="menu-info">
+                    <h3>Beef Burger & Fries</h3>
+                    <p>Classic beef burger with golden fries.</p>
+                    <p class="price">$10.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" alt="Vegetable Pasta">
+                <div class="menu-info">
+                    <h3>Vegetable Pasta</h3>
+                    <p>Fresh pasta tossed with garden vegetables.</p>
+                    <p class="price">$9.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-section" id="desserts">
+        <h2>Desserts</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1601972599720-8eac19967e1b" alt="Chocolate Cake">
+                <div class="menu-info">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich and creamy chocolate delight.</p>
+                    <p class="price">$4.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1590080875832-22d4581c1b20" alt="Ice Cream">
+                <div class="menu-info">
+                    <h3>Ice Cream (3 scoops)</h3>
+                    <p>Choice of vanilla, chocolate, or strawberry.</p>
+                    <p class="price">$3.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1565958011705-44e211f3d46b" alt="Fruit Salad">
+                <div class="menu-info">
+                    <h3>Fruit Salad</h3>
+                    <p>Refreshing mix of seasonal fruits.</p>
+                    <p class="price">$3.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-section" id="drinks">
+        <h2>Drinks</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1580910051073-bb1b95d0f857" alt="Coca-Cola">
+                <div class="menu-info">
+                    <h3>Coca-Cola</h3>
+                    <p>Classic chilled soft drink.</p>
+                    <p class="price">$2.00</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1590080875832-22d4581c1b20" alt="Fresh Juice">
+                <div class="menu-info">
+                    <h3>Fresh Juice</h3>
+                    <p>Orange, pineapple, or mango juice.</p>
+                    <p class="price">$3.50</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Coffee">
+                <div class="menu-info">
+                    <h3>Coffee</h3>
+                    <p>Hot brewed coffee with milk or black.</p>
+                    <p class="price">$2.50</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tasty Bites Restaurant | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
