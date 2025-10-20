@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'intern';
 $username = 'root';
-$password = ''; // Replace with your actual DB password
+$password = '1234'; // Replace with your actual DB password
 
 try {
     // Connect to the database
